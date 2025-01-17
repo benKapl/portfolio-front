@@ -34,7 +34,7 @@ export default function ContentLayout({ children }) {
       </header>
       <div className="bg-slate-900 flex h-full justify-evenly items-center">  {/* MIDDLE CONTAINER*/}
         {pathname !== "/" && // Show only if page != Home
-        (<aside className="bg-slate-800 text-white w-60 h-full">
+        (<aside className="bg-slate-800 text-white w-48 h-full">
           <Sidebar 
             title={sidebarTitle}
             sections={sidebarSections}
