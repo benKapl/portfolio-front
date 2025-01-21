@@ -1,10 +1,25 @@
 "use client";
+import clsx from "clsx";
 import { usePathname} from "next/navigation";
-import { Navigation } from "../components/navigation";
+import { useState, useEffect } from "react";
+import { ComputerNavigation, MobileNavigation } from "../components/navigation";
 import { Sidebar } from "../components/sidebar";
 import { aboutSections, projectsSections } from "../utils/tabContents";
 
 export default function ContentLayout({ children }) {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640); // sm breakpoint
+    };
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   
   let sidebarTitle
   let sidebarSections
@@ -29,9 +44,9 @@ export default function ContentLayout({ children }) {
 
   return (
     <div className="flex flex-col h-screen"> {/* APP CONTAINER*/}
-      <header className="bg-slate-700 text-slate-300 h-20 text-center">
-        <Navigation />
-      </header>
+
+      {isMobile ? <MobileNavigation /> : <ComputerNavigation /> } {/* HEADER CONTAINING NAV BAR*/}
+
       <div className="bg-slate-900 flex h-full justify-evenly items-center">  {/* MIDDLE CONTAINER*/}
         {pathname !== "/" && // Show only if page != Home
         (<aside className="bg-slate-800 text-white w-48 h-full">

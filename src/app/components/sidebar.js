@@ -17,7 +17,7 @@ export const Sidebar = ({ title, sections }) => {
             className={clsx(tabStyle, pathname === section.route && currentTabStyle)}
             onClick={() => router.push(section.route)}
             >
-            <FontAwesomeIcon icon={faChevronRight} />
+            <FontAwesomeIcon className='w-2' icon={faChevronRight} />
             <h2 className='ml-4 text-lg'>{section.displayName}</h2>
         </div>
     ))
