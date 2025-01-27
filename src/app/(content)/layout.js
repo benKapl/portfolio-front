@@ -1,5 +1,6 @@
 "use client";
 import clsx from "clsx";
+import Image from "next/image";
 import { usePathname} from "next/navigation";
 import { useState, useEffect } from "react";
 import { ComputerNavigation, MobileNavigation } from "../components/navigation";
@@ -58,7 +59,7 @@ export default function ContentLayout({ children }) {
         {children}
       </div>  
       <footer className="bg-slate-700  text-white p-4 text-center">
-        Ceci est un footer
+        <Image src="/images/logos/logo_github.png" alt="Logo Github" width={32} height={32} className="w-8"/>
       </footer>
     </div>
   );
