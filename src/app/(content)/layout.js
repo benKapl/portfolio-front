@@ -1,10 +1,10 @@
 "use client";
-import clsx from "clsx";
-import Image from "next/image";
+// import clsx from "clsx";
 import { usePathname} from "next/navigation";
 import { useState, useEffect } from "react";
 import { ComputerNavigation, MobileNavigation } from "../components/navigation";
 import { Sidebar } from "../components/sidebar";
+import { Socials } from "../components/footer";
 import { aboutSections, projectsSections } from "../utils/tabContents";
 
 export default function ContentLayout({ children }) {
@@ -12,6 +12,8 @@ export default function ContentLayout({ children }) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // const getSocials = fetch()
+
     const handleResize = () => {
       setIsMobile(window.innerWidth < 640); // sm breakpoint
     };
@@ -25,7 +27,7 @@ export default function ContentLayout({ children }) {
   let sidebarTitle
   let sidebarSections
   
-  // Determine the content of the Sidebar
+  // Use pathname to determine the content of the Sidebar
   const pathname = usePathname()
   let pathKey
 
@@ -49,7 +51,7 @@ export default function ContentLayout({ children }) {
       {isMobile ? <MobileNavigation /> : <ComputerNavigation /> } {/* HEADER CONTAINING NAV BAR*/}
 
       <div className="bg-slate-900 flex h-full justify-evenly items-center">  {/* MIDDLE CONTAINER*/}
-        {pathname !== "/" && // Show only if page != Home
+        {pathname !== "/" && // Show Sidebar only if page is not "/"
         (<aside className="bg-slate-800 text-white w-48 h-full">
           <Sidebar 
             title={sidebarTitle}
@@ -58,8 +60,8 @@ export default function ContentLayout({ children }) {
           </aside>)}
         {children}
       </div>  
-      <footer className="bg-slate-700  text-white p-4 text-center">
-        <Image src="/images/logos/logo_github.png" alt="Logo Github" width={32} height={32} className="w-8"/>
+      <footer className="bg-slate-700">  {/* FOOTER WITH SOCIALS */}
+        <Socials />
       </footer>
     </div>
   );
