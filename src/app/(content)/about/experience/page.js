@@ -14,8 +14,7 @@ export default function Experience() {
             <h1 className={clsx(titleStyle, "text-3xl mb-6")}>Expériences</h1>
             <div className={allExpContainer}>
             {/* Component ? */}
-                <Company/>
-
+                <Company id="pitchy"/>
             </div>
         </section>
         )
