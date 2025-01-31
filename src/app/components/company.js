@@ -7,7 +7,7 @@ import { jobs } from "../utils/experiencesContent";
 
 const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL
 
-export const Company = ({ id }) => {
+export const Company = ({ id, name, logo, website, description }) => {
 
     const companyJobs = jobs.filter(data => (data.companyId == id)).map((data, index) => {
        return (<Job 
@@ -27,12 +27,12 @@ export const Company = ({ id }) => {
         <div className={companyContainer}>
             <div className={companyDefContainer}>
                 <div className="flex flex-start items-center">
-                    <Link href="https://www.pitchy.fr" passHref target="_blank">
-                        <Image src="/images/logos/logo_pitchy.svg" alt="Logo Pitchy" width={100} height={20}/>
+                    <Link href={website} passHref target="_blank">
+                        <Image src={logo} alt={`Logo ${name}`} width={100} height={20}/>
                     </Link>
-                    <h2 className={clsx(titleStyle, "text-2xl ml-8 hidden")}>Pitchy</h2>
+                    <h2 className={clsx(titleStyle, "text-2xl ml-8 hidden")}>{name}</h2>
                 </div>
-                <p className="text-slate-300 my-2">Solutions web et mobile de création vidéo autonome pour les salariés de grands groupes.</p>
+                <p className="text-slate-300 my-2">{description.FR}</p>
             </div>
             {companyJobs}
         </div>
