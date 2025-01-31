@@ -11,16 +11,16 @@ export default function Experience() {
     // Styles
     const testStyle = "border border-solid border-red-200"
 
-    const container = "flex flex-1 flex-col h-full w-full justify-start items-start mx-4 mt-4 w-[90%]"
+    const container = "flex flex-1 flex-col h-full w-full justify-start items-start mx-4 mt-8 w-[90%]"
     const titleStyle = "text-slate-300 font-bold"
     const allExpContainer = "flex flex-col h-full w-auto m-4"
-    const companyContainer = "flex flex-col flex-start w-full"
+    const companyContainer = "flex flex-col w-full rounded-2xl p-6 bg-inherit bg-opacity-100 transition-all transform hover:scale-105 hover:shadow-xl hover:bg-slate-800 hover:bg-opacity-80";
     const companyDefContainer = "flex flex-col flex-start"
     const jobContainer = "flex justify-start items-center w-full mb-2"
     const dateContainer="flex justify-between items-center w-40"
     const dateStyle = "text-yellow-400 "
-    const skillsContainer = "flex justify-start items-center max-w-[700px] gap-2 flex-wrap"
-    const skillStyle = "px-3 rounded-lg bg-gray-200 text-gray-700 text-sm hover:opacity-80 transition-opacity"
+    const skillsContainer = "flex justify-start items-center max-w-[900px] gap-2 flex-wrap"
+    const skillStyle = "px-3 py-1 rounded-lg bg-gray-800 text-gray-300 text-xs sm:text-sm hover:bg-gray-700 transition";
 
     const startDate = moment([2023, 8, 11]).format("MMM YYYY")
     const fStartDate = startDate.charAt(0).toUpperCase() + startDate.slice(1);
@@ -30,7 +30,7 @@ export default function Experience() {
 
     return (
         <section className={container}>
-            <h1 className={clsx(titleStyle, "text-3xl mb-8")}>Expériences</h1>
+            <h1 className={clsx(titleStyle, "text-3xl mb-6")}>Expériences</h1>
             <div className={allExpContainer}>
             {/* Component ? */}
                 <div className={companyContainer}>
@@ -52,12 +52,12 @@ export default function Experience() {
                         <h3 className={clsx("text-slate-300 text-2xl italic ml-8")}>Product Manager</h3>
                     </div>
                     <div className={skillsContainer}>
-                        <span className={skillStyle}>Suçage de gros calots</span>
-                        <span className={skillStyle}>Envoyer des mails </span>
-                        <span className={skillStyle}>Envoyer des mails </span>
-                        <span className={skillStyle}>Envoyer des mails </span>
-                        <span className={skillStyle}>Envoyer des mails </span>
-                        <span className={skillStyle}>Envoyer des mails </span>
+                        <span className={skillStyle}>Création de user stories</span>
+                        <span className={skillStyle}>Gestion de roadmap </span>
+                        <span className={skillStyle}>Suivi de sprints agiles </span>
+                        <span className={skillStyle}>Entretiens utilisateurs </span>
+                        <span className={skillStyle}>Tests fonctionnels </span>
+                        <span className={skillStyle}>Analyse de données </span>
 
                     </div>
 
