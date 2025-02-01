@@ -36,7 +36,7 @@ export const jobs = [
     // },
     startDate: new Date(2023, 8, 11),
     endDate: new Date(2024, 4, 21),
-    skills: {
+    tasks: {
       FR: [
         "Rédaction de user stories",
         "Gestion de roadmap",
@@ -76,7 +76,7 @@ export const jobs = [
     // },
     startDate: new Date(2021, 6, 1),
     endDate: new Date(2023, 8, 3),
-    skills: {
+    tasks: {
       FR: [
         "Rédaction de user stories",
         "Gestion de roadmap",
@@ -114,7 +114,7 @@ export const jobs = [
     // },
     startDate: new Date(2018, 11, 3),
     endDate: new Date(2021, 6, 1),
-    skills: {
+    tasks: {
       FR: [
         "Accompagnement client BtoB",
         "Animation de formations",

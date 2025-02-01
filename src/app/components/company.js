@@ -16,6 +16,7 @@ export const Company = ({ id, name, logo, website, description }) => {
                 title={data.title}
                 start={data.startDate}
                 end={data.endDate}
+                tasks={data.tasks}
                 />)
     })
 
