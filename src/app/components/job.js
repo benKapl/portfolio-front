@@ -20,7 +20,7 @@ export const Job = ({
     const jobContainer = "flex justify-start items-center w-full mb-2";
     const dateContainer = "flex justify-between items-center w-40";
     const dateStyle = "text-yellow-400 ";
-    const skillsContainer = "flex justify-start items-center gap-2 flex-wrap";
+    const tasksContainer = "flex justify-start items-center gap-2 flex-wrap";
 
     const startDate = moment(start).format("MMM YYYY");
     const fStartDate = startDate.charAt(0).toUpperCase() + startDate.slice(1);
@@ -37,7 +37,7 @@ export const Job = ({
                 </div>
                 <h3 className={clsx("text-slate-300 text-2xl italic ml-8")}>{title.FR}</h3>
             </div>
-            <div className={skillsContainer}>
+            <div className={tasksContainer}>
                 {tasks.FR.map((task, index) => (
                     <Task key={index} name={task} />
                 ))}
