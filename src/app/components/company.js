@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx"
 import { Job } from "@/app/components/job"
-import { jobs } from "../utils/experiencesContent";
+import { jobs } from "../data/experiences";
 
 const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL
 

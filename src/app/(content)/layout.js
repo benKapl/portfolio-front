@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { ComputerNavigation, MobileNavigation } from "../components/navigation";
 import { Sidebar } from "../components/sidebar";
 import { Socials } from "../components/footer";
-import { aboutSections, projectsSections } from "../utils/tabContents";
+import { aboutSections, projectsSections } from "../data/tabs";
 
 export default function ContentLayout({ children }) {
 

@@ -1,6 +1,6 @@
 import clsx from "clsx"
 import { Company } from "@/app/components/company"
-import { companies } from "@/app//utils/experiencesContent";
+import { companies } from "@/app/data/experiences";
 
 export default function Experience() {
 

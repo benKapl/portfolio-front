@@ -8,18 +8,18 @@
       displayName: "Experience",
       route: "/about/experience",
     },
-    {
-      displayName: "Education",
-      route: "/about/education",
-    },
+    // {
+    //   displayName: "Education",
+    //   route: "/about/education",
+    // },
     {
       displayName: "Skills",
       route: "/about/skills",
     },
-    {
-      displayName: "Extra",
-      route: "/about/extra",
-    },
+    // {
+    //   displayName: "Extra",
+    //   route: "/about/extra",
+    // },
   ]
 
   export const projectsSections = [
