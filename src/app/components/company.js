@@ -22,7 +22,7 @@ export const Company = ({ id, name, logo, website, description }) => {
 
     const titleStyle = "text-slate-300 font-bold"
     const companyContainer = "flex flex-col w-full p-6 bg-inherit bg-opacity-100";
-    const companyDefContainer = "flex flex-col flex-start"
+    const companyDefContainer = "flex flex-col flex-start ";
 
     return (
         <div className={companyContainer}>
