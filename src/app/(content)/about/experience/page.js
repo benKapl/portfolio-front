@@ -4,16 +4,6 @@ import { companies } from "@/app/data/experiences";
 
 export default function Experience() {
 
-    const companiesBlocs = companies.map((data) => {
-           return (<Company
-                    key={data.id}
-                    id={data.id}
-                    name={data.name}
-                    logo={`/images/logos/${data.logo}`}
-                    website={data.website}
-                    description={data.description}
-                    />)
-        })
 
     // Styles
     const testStyle = "border border-solid border-red-200"
@@ -26,7 +16,15 @@ export default function Experience() {
         <section className={container}>
             <h1 className={clsx(titleStyle, "text-3xl mb-6")}>Expériences</h1>
             <div className={allExpContainer}>
-                {companiesBlocs}
+                {companies.map((data) => {
+                  return (<Company
+                    key={data.id}
+                    id={data.id}
+                    name={data.name}
+                    logo={`/images/logos/${data.logo}`}
+                    website={data.website}
+                    description={data.description}
+                    />)})}
             </div>
         </section>
         )

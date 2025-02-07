@@ -4,8 +4,6 @@ import moment from "moment";
 import "moment/locale/fr";
 import { Task } from "@/app/components/task";
 
-const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
-
 export const Job = ({
     category,
     title, 
@@ -15,12 +13,14 @@ export const Job = ({
 }) => {
     moment.locale("fr");
 
-    const container = "mb-4";
+    const container = "p-6 rounded-2xl transition-all transform hover:shadow-xl hover:bg-slate-800 hover:bg-opacity-80";
     const titleStyle = "text-slate-300 font-bold";
-    const jobContainer = "flex justify-start items-center w-full mb-2";
+    const jobTitleContainer = "flex justify-start items-center w-full mb-2";
     const dateContainer = "flex justify-between items-center w-40";
     const dateStyle = "text-yellow-400 ";
     const tasksContainer = "flex justify-start items-center gap-2 flex-wrap";
+    const stackContainer = "flex justify-start items-center gap-2 flex-wrap";
+    // const toolsContainer = "flex justify-start items-center gap-2 flex-wrap";
 
     const startDate = moment(start).format("MMM YYYY");
     const fStartDate = startDate.charAt(0).toUpperCase() + startDate.slice(1);
@@ -29,7 +29,7 @@ export const Job = ({
 
     return (
         <div className={container}>
-            <div className={jobContainer}>
+            <div className={jobTitleContainer}>
                 <div className={dateContainer}>
                     <p className={dateStyle}>{fStartDate}</p>
                     <p className={titleStyle}> - </p>
@@ -42,6 +42,7 @@ export const Job = ({
                     <Task key={index} name={task} />
                 ))}
             </div>
+            <div className={stackContainer}></div>
         </div>
     );
 };

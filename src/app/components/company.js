@@ -21,7 +21,7 @@ export const Company = ({ id, name, logo, website, description }) => {
     })
 
     const titleStyle = "text-slate-300 font-bold"
-    const companyContainer = "flex flex-col w-full rounded-2xl p-6 bg-inherit bg-opacity-100 transition-all transform hover:scale-105 hover:shadow-xl hover:bg-slate-800 hover:bg-opacity-80";
+    const companyContainer = "flex flex-col w-full p-6 bg-inherit bg-opacity-100";
     const companyDefContainer = "flex flex-col flex-start"
 
     return (

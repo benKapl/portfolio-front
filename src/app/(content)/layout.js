@@ -60,7 +60,7 @@ export default function ContentLayout({ children }) {
           </aside>)}
         {children}
       </div>  
-      <footer className="bg-slate-700">  {/* FOOTER WITH SOCIALS */}
+      <footer className="relative z-10 bg-slate-700">  {/* FOOTER WITH SOCIALS */}
         <Socials />
       </footer>
     </div>
