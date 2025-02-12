@@ -1,15 +1,18 @@
 "use client";
 import clsx from "clsx";
+import Image from "next/image";
 import moment from "moment";
 import "moment/locale/fr";
 import { Task } from "@/app/components/task";
+import { stacks } from "../data/stacks";
 
 export const Job = ({
-    category,
+    // category,
     title, 
     start, 
     end,
-    tasks 
+    tasks,
+    languages, 
 }) => {
     moment.locale("fr");
 
@@ -27,6 +30,11 @@ export const Job = ({
     const endDate = moment(end).format("MMM YYYY");
     const fEndDate = endDate.charAt(0).toUpperCase() + endDate.slice(1);
 
+    // Match languages props with stacks logo url
+    const langLogos = stacks.filter(data => languages.includes(data.id)).map((data, i) => {
+        return <Image key={i} src={`/images/logos/${data.logo}`} alt={`Logo ${data.name}`} width={40} height={40}/>
+    })
+
     return (
         <div className={container}>
             <div className={jobTitleContainer}>
@@ -41,6 +49,9 @@ export const Job = ({
                 {tasks.FR.map((task, index) => (
                     <Task key={index} name={task} />
                 ))}
+            </div>
+            <div className={stackContainer}>
+                {langLogos}
             </div>
             <div className={stackContainer}></div>
         </div>

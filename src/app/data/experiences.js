@@ -51,8 +51,8 @@ export const jobs = [
     },
     stack: {
       languages: [
-        "Python",
-        "SQL"
+        "python",
+        "sql"
     ],
       tools: [
         "Notion",
@@ -91,7 +91,7 @@ export const jobs = [
     },
     stack: {
       languages: [
-        "SQL",
+        "sql",
     ],
       tools: [
         "Notion",
