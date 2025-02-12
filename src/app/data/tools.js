@@ -31,7 +31,7 @@ export const tools = [
   },
   {
     id: "jira",
-    name: "Vercel",
+    name: "Jira",
     logo: "",
     isTechnical: true,
   },
