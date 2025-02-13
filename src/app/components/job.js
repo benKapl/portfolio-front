@@ -22,7 +22,7 @@ export const Job = ({
     const dateContainer = "flex justify-between items-center w-40";
     const dateStyle = "text-yellow-400 ";
     const tasksContainer = "flex justify-start items-center gap-2 flex-wrap";
-    const stackContainer = "flex justify-start items-center gap-2 flex-wrap";
+    const stackContainer = "my-2 flex justify-start items-center gap-2 flex-wrap";
     // const toolsContainer = "flex justify-start items-center gap-2 flex-wrap";
 
     const startDate = moment(start).format("MMM YYYY");
@@ -32,7 +32,7 @@ export const Job = ({
 
     // Match languages props with stacks logo url
     const langLogos = stacks.filter(data => languages.includes(data.id)).map((data, i) => {
-        return <Image key={i} src={`/images/logos/${data.logo}`} alt={`Logo ${data.name}`} width={40} height={40}/>
+        return <Image key={i} src={`/images/logos/${data.logo}`} alt={`Logo ${data.name}`} width={35} height={35}/>
     })
 
     return (
@@ -51,9 +51,8 @@ export const Job = ({
                 ))}
             </div>
             <div className={stackContainer}>
-                {langLogos}
+                <p className="text-white">Language: </p>{langLogos}
             </div>
-            <div className={stackContainer}></div>
         </div>
     );
 };

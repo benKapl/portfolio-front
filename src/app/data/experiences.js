@@ -38,13 +38,10 @@ export const jobs = [
     endDate: new Date(2024, 4, 21),
     tasks: {
       FR: [
-        "Rédaction de user stories",
-        "Gestion de roadmap",
-        "Suivi de sprints agiles",
-        "Schéma techniques et fonctionnels",
-        "Entretiens utilisateurs",
-        "Tests fonctionnels",
-        "Tests de non-régression ",
+        "Conception d'ETLs",
+        "Définition de la roadmap Data Collect",
+        "Implémentation de SCRUM",
+        "Autoformation sur Python",
       ],
       EN: [
       ]
