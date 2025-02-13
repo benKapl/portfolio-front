@@ -31,7 +31,7 @@ export const Company = ({ id, name, logo, website, description }) => {
             <div className={companyDefContainer}>
                 <div className="flex flex-start items-center">
                     <Link href={website} passHref target="_blank">
-                        <Image src={logo} alt={`Logo ${name}`} width={100} height={20}/>
+                        <Image src={logo} alt={`Logo ${name}`} width={125} height={20}/>
                     </Link>
                     <h2 className={clsx(titleStyle, "text-2xl ml-8 hidden")}>{name}</h2>
                 </div>
