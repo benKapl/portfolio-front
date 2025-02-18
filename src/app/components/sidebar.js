@@ -23,8 +23,8 @@ export const Sidebar = ({ title, sections }) => {
     ))
 
     return (
-        <div className="flex flex-col justify-start items-start w-full my-6">
-            <h1 className='text-slate-300 text-2xl mb-4 px-4'>{title}</h1>
+        <div className="flex flex-col justify-start items-start h-full w-full mt-6">
+            <h1 className='mt-2 text-slate-300 text-2xl mb-4 px-4'>{title}</h1>
             <div className="flex flex-col w-full">{tabs}</div>
         </div>
     )
