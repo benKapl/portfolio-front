@@ -1,16 +1,19 @@
+
+import clsx from "clsx"
 import Image from "next/image"
 
 export const Stack = ({ name, logo_url, level, isLevelDisplayed }) => {
 
-    const container = "bg-yellow-500 flex justify-between items-center h-full w-full"
+    const container = "border border-yellow-500 bg-inherit flex justify-start items-center h-full w-full text-white"
+    const titleStyle = "text-slate-300 font-bold";
     const content =""
 
     return (
         <div className={container}>
 
-            <div className="bg-green-500 w-12 h-12"></div>
+            <Image src={`/images/logos/${logo_url}`} width={50} height={50} alt={name} className="" />
             <div className={content}>
-                <p className="">{name}</p>
+                <p className={clsx(titleStyle, "text-xl")}>{name}</p>
                 <p className="">Stars</p>
             </div>
         </div>

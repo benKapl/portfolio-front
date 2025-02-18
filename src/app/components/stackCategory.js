@@ -1,3 +1,4 @@
+import clsx from "clsx"
 import { stacks } from "../data/stacks"
 import { Stack } from "./stack"
 
@@ -5,12 +6,13 @@ export const StackCategory = ({ id, name }) => {
 
     const filteredStacks = stacks.filter(data => data.category === id)
 
-    const container = " bg-red-500 flex flex-col h-full w-72 justify-start items-start"
-    const stacksContainer ="flex flex-col justify-start items-start h-auto w-full gap-2" 
+    const container = "border border-red-500 bg-inherit flex flex-col h-full w-72 justify-start items-start"
+    const titleStyle = "text-slate-300 font-bold";
+    const stacksContainer ="flex flex-col justify-start items-start h-auto w-full gap-4" 
 
     return (
         <div className={container}>
-            <h2>{name}</h2>
+            <h2 className={clsx(titleStyle, "text-2xl")}>{name}</h2>
             <div className={stacksContainer}>
                 {filteredStacks.map((data, i) => {
                     return (

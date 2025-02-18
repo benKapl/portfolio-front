@@ -5,6 +5,10 @@
       route: "/about/bio",
     },
     {
+      displayName: "Stack",
+      route: "/about/stack",
+    },
+    {
       displayName: "Expériences",
       route: "/about/experience",
     },
@@ -12,10 +16,6 @@
     //   displayName: "Education",
     //   route: "/about/education",
     // },
-    {
-      displayName: "Stack",
-      route: "/about/stack",
-    },
     // {
     //   displayName: "Extra",
     //   route: "/about/extra",

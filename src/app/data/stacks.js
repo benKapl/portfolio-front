@@ -35,7 +35,7 @@ export const stacks = [
       category: "language",
       id: "go",
       name: "Go",
-      logo: "logo_go.png",
+      logo: "logo_golang.png",
       level: 3,
       isLevelDisplayed: true,
     },
@@ -105,14 +105,6 @@ export const stacks = [
     },
     {
       category: "framework",
-      id: "expo",
-      name: "Expo",
-      logo: "",
-      level: null,
-      isLevelDisplayed: false,
-    },
-    {
-      category: "framework",
       id: "nextjs",
       name: "NextJS",
       logo: "",
@@ -134,6 +126,14 @@ export const stacks = [
       logo: "",
       level: 2,
       isLevelDisplayed: true,
+    },
+    {
+      category: "framework",
+      id: "expo",
+      name: "Expo",
+      logo: "",
+      level: null,
+      isLevelDisplayed: false,
     },
     {
       category: "library",
