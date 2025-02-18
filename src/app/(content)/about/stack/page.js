@@ -18,24 +18,6 @@ export default function StackPage() {
                 {stackCategories.map((data, i) => {
                     return <StackCategory key={i} id={data.id} name={data.name.FR}/>
                 })}
-                
-                <StackCategory />
-                <StackCategory />
-                <StackCategory />
-                <StackCategory />
-
-
-
-
-                {/* {companies.map((data) => {
-                  return (<Company
-                    key={data.id}
-                    id={data.id}
-                    name={data.name}
-                    logo={`/images/logos/${data.logo}`}
-                    website={data.website}
-                    description={data.description}
-                    />)})} */}
             </div>
         </section>
         )
