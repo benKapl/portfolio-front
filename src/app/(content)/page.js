@@ -9,7 +9,7 @@ export default function Home() {
                 </div>
                 <div className="flex-1 flex flex-col justify-center items-start text-white">
                     <h1 className="text-7xl text-yellow-500 font-bold">Salut !</h1>
-                    <h2 className="text-4xl mt-2">Je suis <span className="">Benjamin</span>, un dévelopeur web basé à Paris.</h2>
+                    <h2 className="text-4xl mt-2">Je suis <span className="">Benjamin</span>, un développeur web basé à Paris.</h2>
                 </div>
             </div>
         </div>

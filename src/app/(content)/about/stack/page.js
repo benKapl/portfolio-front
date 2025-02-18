@@ -7,7 +7,7 @@ export default function StackPage() {
     // Styles
     const container = "bg-inherit flex-1 flex-col h-full w-full justify-start items-start mx-4 mt-8 w-[90%] overflow-y-auto"
     const titleStyle = "text-slate-300 font-bold"
-    const categoriesContainer = "flex flex-wrap h-96 w-auto m-4 gap-4"
+    const categoriesContainer = "flex flex-wrap h-100 w-auto m-4 gap-4"
 
     return (
         <section className={container}>
