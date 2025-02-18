@@ -9,7 +9,7 @@ export default function Experience() {
     // const testStyle = "border border-solid border-red-200"
     const container = "bg-inherit flex-1 flex-col h-full w-full justify-start items-start mx-4 mt-8 w-[90%] overflow-y-auto"
     const titleStyle = "text-slate-300 font-bold"
-    const allExpContainer = "flex bg-inherit flex-col h-10 w-auto mx-4 gap-4"
+    const allExpContainer = "flex bg-inherit flex-col h-10 w-auto mx-4 gap-2"
 
     return (
         <section className={container}>

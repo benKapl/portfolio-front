@@ -49,9 +49,10 @@ export const Job = ({
                     <Task key={index} name={task} />
                 ))}
             </div>
+            {langLogos.length > 0 &&
             <div className={stackContainer}>
-                <p className="text-white">Language: </p>{langLogos}
-            </div>
+                <p className=" ml-2 text-white">Stack : </p>{langLogos}
+            </div>}
         </div>
     );
 };
