@@ -19,10 +19,10 @@ export const ComputerNavigation = () => {
                     Hello
                 </Link>
                 <Link href="/about/bio" className={clsx(tabStyle, pathname.startsWith("/about") && currentTabStyle)}>
-                    About
+                    À propos
                 </Link>
                 <Link href="/projects" className={clsx(tabStyle, pathname === "/projects" && currentTabStyle)}>
-                    Projects
+                    Projets
                 </Link>
             </nav>
         </header>

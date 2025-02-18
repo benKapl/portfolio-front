@@ -37,11 +37,11 @@ export default function ContentLayout({ children }) {
 
   switch (pathKey) {
     case ("about"):
-      sidebarTitle = "About"
+      sidebarTitle = "À propos"
       sidebarSections = aboutSections
       break
     case ("projects"):
-      sidebarTitle = "Projects"
+      sidebarTitle = "Projets"
       sidebarSections = projectsSections
   } 
 

@@ -1,11 +1,11 @@
   // Sidebar contents
   export const aboutSections = [
     {
-      displayName: "Biography",
+      displayName: "Bio",
       route: "/about/bio",
     },
     {
-      displayName: "Experience",
+      displayName: "Expériences",
       route: "/about/experience",
     },
     // {
@@ -13,8 +13,8 @@
     //   route: "/about/education",
     // },
     {
-      displayName: "Skills",
-      route: "/about/skills",
+      displayName: "Stack",
+      route: "/about/stack",
     },
     // {
     //   displayName: "Extra",

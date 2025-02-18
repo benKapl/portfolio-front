@@ -27,8 +27,8 @@ export const Socials = () => {
     }, [])
 
     return (
-        <div className="m-4 flex gap-12 text-white">
-            <p>Connect with me: </p>
+        <div className="m-4 mr-8 flex justify-end gap-12 text-white">
+            {/* <p>Rejoignez-moi: </p> */}
         {socials.map((data, index) => (
             <Link key={index} href={data.url} passHref target="_blank">
                 <Image
