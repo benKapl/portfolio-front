@@ -1,22 +1,38 @@
+export const stackCategories = [
+  {
+    id: "language",
+    name: {
+      FR: "Langages",
+      EN: "Languages",
+    },
+  },
+  {
+    id: "framework",
+    name: {
+      FR: "Frameworks",
+      EN: "Frameworks",
+    },
+  },
+  {
+    id: "library",
+    name: {
+      FR: "Librairies",
+      EN: "Libraries",
+    },
+  },
+  {
+    id: "dbms",
+    name: {
+      FR: "SGBD",
+      EN: "DBMS",
+    },
+  },
+
+]
+
 export const stacks = [
     {
-      type: "language",
-      id: "python",
-      name: "Python",
-      logo: "logo_python.png",
-      level: 3,
-      isLevelDisplayed: true,
-    },
-    {
-      type: "language",
-      id: "c",
-      name: "C",
-      logo: "logo_c.png",
-      level: 2,
-      isLevelDisplayed: true,
-    },
-    {
-      type: "language",
+      category: "language",
       id: "go",
       name: "Go",
       logo: "logo_go.png",
@@ -24,55 +40,63 @@ export const stacks = [
       isLevelDisplayed: true,
     },
     {
-      type: "language",
+      category: "language",
       id: "js",
       name: "JavaScript",
       logo: "logo_javascript.png",
       level: 3,
       isLevelDisplayed: true,
-    },
+    },  
     {
-      type: "language",
-      id: "html",
-      name: "HTML",
-      logo: "",
+      category: "language",
+      id: "ts",
+      name: "TypeScript",
+      logo: "logo_typescript.png",
+      level: 1,
+      isLevelDisplayed: true,
+    },  
+    {
+      category: "language",
+      id: "python",
+      name: "Python",
+      logo: "logo_python.png",
       level: 3,
       isLevelDisplayed: true,
     },
     {
-      type: "language",
-      id: "css",
-      name: "CSS",
-      logo: "",
+      category: "language",
+      id: "c",
+      name: "C",
+      logo: "logo_c.png",
       level: 2,
       isLevelDisplayed: true,
     },
     {
-      type: "language",
-      id: "ts",
-      name: "Typescript",
-      logo: "",
-      level: 1,
+      category: "language",
+      id: "htmlcss",
+      name: "HTML & CSS",
+      logo: "logo_html.png",
+      level: 3,
       isLevelDisplayed: true,
     },
     {
-      type: "language",
+      category: "language",
       id: "sql",
       name: "SQL",
       logo: "logo_sql.png",
       level: 2,
       isLevelDisplayed: true,
     },
+    // {
+    //   category: "environment",
+    //   id: "nodejs",
+    //   name: "NodeJS",
+    //   logo: "",
+    //   level: null,
+    //   isLevelDisplayed: false,
+    // },
     {
-      type: "environment",
-      id: "nodejs",
-      name: "NodeJS",
-      logo: "",
-      level: null,
-      isLevelDisplayed: false,
-    },
-    {
-      type: "framework",
+      category: "framework",
       id: "react",
       name: "ReactJS",
       logo: "",
@@ -80,7 +104,7 @@ export const stacks = [
       isLevelDisplayed: false,
     },
     {
-      type: "framework",
+      category: "framework",
       id: "expo",
       name: "Expo",
       logo: "",
@@ -88,7 +112,7 @@ export const stacks = [
       isLevelDisplayed: false,
     },
     {
-      type: "framework",
+      category: "framework",
       id: "nextjs",
       name: "NextJS",
       logo: "",
@@ -96,7 +120,7 @@ export const stacks = [
       isLevelDisplayed: true,
     },
     {
-      type: "framework",
+      category: "framework",
       id: "expressjs",
       name: "ExpressJS",
       logo: "",
@@ -104,7 +128,7 @@ export const stacks = [
       isLevelDisplayed: true,
     },
     {
-      type: "framework",
+      category: "framework",
       id: "reactnative",
       name: "React Native",
       logo: "",
@@ -112,7 +136,7 @@ export const stacks = [
       isLevelDisplayed: true,
     },
     {
-      type: "library",
+      category: "library",
       id: "mongoose",
       name: "Mongoose",
       logo: "",
@@ -120,7 +144,7 @@ export const stacks = [
       isLevelDisplayed: true,
     },
     {
-      type: "library",
+      category: "library",
       id: "redux",
       name: "Redux",
       logo: "",
@@ -128,7 +152,7 @@ export const stacks = [
       isLevelDisplayed: true,
     },
     {
-      type: "library",
+      category: "library",
       id: "tailwind",
       name: "Tailwind CSS",
       logo: "",
@@ -136,7 +160,7 @@ export const stacks = [
       isLevelDisplayed: true,
     },
     {
-      type: "dbms",
+      category: "dbms",
       id: "mongodb",
       name: "MongoDB",
       logo: "",
@@ -144,7 +168,7 @@ export const stacks = [
       isLevelDisplayed: true,
     },
     {
-      type: "dbms",
+      category: "dbms",
       id: "mysql",
       name: "MySQL",
       logo: "",
@@ -152,7 +176,7 @@ export const stacks = [
       isLevelDisplayed: false,
     },
     {
-      type: "dbms",
+      category: "dbms",
       id: "postgresql",
       name: "PostgreSQL",
       logo: "",

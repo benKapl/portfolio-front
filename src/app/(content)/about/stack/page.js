@@ -1,20 +1,13 @@
 import clsx from "clsx"
+import { stackCategories } from "@/app/data/stacks"
 import { StackCategory } from "@/app/components/stackCategory";
-import { companies } from "@/app/data/experiences";
 
 export default function StackPage() {
 
     // Styles
-
-    // const testStyle = "border border-solid border-red-200"
     const container = "bg-inherit flex-1 flex-col h-full w-full justify-start items-start mx-4 mt-8 w-[90%] overflow-y-auto"
     const titleStyle = "text-slate-300 font-bold"
     const categoriesContainer = "flex flex-wrap h-96 w-auto m-4 gap-4"
-    const categoryLayout = ""
-    const stacksContainer ="" 
-    const stackLayout = ""
-    const stackContent =""
-
 
     return (
         <section className={container}>
@@ -22,7 +15,10 @@ export default function StackPage() {
                 <h1 className={clsx(titleStyle, "text-3xl")}>Stack</h1>
             </div>
             <div className={categoriesContainer}>
-                <StackCategory />
+                {stackCategories.map((data, i) => {
+                    return <StackCategory key={i} id={data.id} name={data.name.FR}/>
+                })}
+                
                 <StackCategory />
                 <StackCategory />
                 <StackCategory />
