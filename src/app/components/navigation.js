@@ -21,7 +21,7 @@ export const ComputerNavigation = () => {
                 <Link href="/about/bio" className={clsx(tabStyle, pathname.startsWith("/about") && currentTabStyle)}>
                     À propos
                 </Link>
-                <Link href="/projects" className={clsx(tabStyle, pathname === "/projects" && currentTabStyle)}>
+                <Link href="/projects/pinned" className={clsx(tabStyle, pathname === "/projects" && currentTabStyle)}>
                     Projets
                 </Link>
             </nav>

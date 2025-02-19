@@ -23,10 +23,10 @@
   ]
 
   export const projectsSections = [
-    // {
-    //   displayName: "Favoris",
-    //   route: "/projects/highlights",
-    // },
+    {
+      displayName: "Favoris",
+      route: "/projects/pinned",
+    },
     {
       displayName: "2025",
       route: "/projects/2025",

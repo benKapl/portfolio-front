@@ -21,9 +21,9 @@ export const Company = ({ id, name, logo, website, description }) => {
                 />)
     })
 
-    const titleStyle = "text-slate-300 font-bold"
     const companyContainer = "flex flex-col w-full px-6 py-3 bg-inherit bg-opacity-100";
     const companyDefContainer = "flex flex-col flex-start ";
+    const titleStyle = "text-slate-300 font-bold"
 
     return (
         <div className={companyContainer}>
