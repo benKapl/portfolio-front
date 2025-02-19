@@ -11,7 +11,8 @@ export const Stack = ({ name, logo_url, level, isLevelDisplayed }) => {
         let style=""
         if (i >= level) { style="text-gray-500" }
         stars.push(
-            <FontAwesomeIcon 
+            <FontAwesomeIcon
+                key={i} 
                 className={clsx(style, "w-5")}
                 icon={faStar} />
         )
