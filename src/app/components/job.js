@@ -21,7 +21,7 @@ export const Job = ({
     const dateContainer = "flex justify-between items-center w-40";
     const dateStyle = "text-yellow-400 ";
     const tasksContainer = "flex justify-start items-center gap-2 flex-wrap";
-    const stackContainer = "my-2 flex justify-start items-center gap-2 flex-wrap";
+    const stackContainer = "mt-2 flex justify-start items-center gap-2 flex-wrap";
     // const toolsContainer = "flex justify-start items-center gap-2 flex-wrap";
 
     const startDate = moment(start).format("MMM YYYY");

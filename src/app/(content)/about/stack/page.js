@@ -5,7 +5,7 @@ import { StackCategory } from "@/app/components/stackCategory";
 export default function StackPage() {
 
     // Styles
-    const container = "bg-inherit flex-1 flex-col h-full w-full justify-start items-start mx-4 w-[90%]"
+    const container = "bg-inherit flex-1 flex-col h-auto w-full justify-start items-start mx-4 w-[90%]"
     const titleStyle = "text-slate-300 font-bold"
     const categoriesContainer = "flex flex-wrap h-auto w-auto m-4 gap-4"
 
