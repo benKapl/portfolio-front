@@ -5,9 +5,9 @@ export default function Bio() {
     // Styles
 
     // const testStyle = "border border-solid border-red-200"
-    const container = "flex-1 flex-col h-full w-full justify-start items-start mx-4 mt-8 w-[90%]"
+    const container = "flex-1 flex-col h-auto w-full justify-start items-start mx-4 mt-8 w-[90%]"
     const titleStyle = "text-slate-300 font-bold"
-    const content = "text-white m-2 soverflow-y-auto"
+    const content = "text-white m-2 "
 
     return (
         <section className={container}>
