@@ -22,7 +22,7 @@ export default async function ProjectPage({params}) {
   return (
       <section className={container}>
           <div className="sticky top-0 pt-6 pb-4 pl-6 bg-inherit h-18 w-full z-30"> {/*Fixes the title at the top*/}
-              <h1 className={clsx(titleStyle, "text-3xl")}>{category}</h1>
+              <h1 className={clsx(titleStyle, "text-3xl")}>{category === "pinned" ? "Favoris" : category}</h1>
           </div>
           <div className={projectsContainer}>
             {filteredProjects.map(data => {

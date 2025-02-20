@@ -87,14 +87,14 @@ export const stacks = [
       level: 3,
       isLevelDisplayed: true,
     },
-    // {
-    //   category: "environment",
-    //   id: "nodejs",
-    //   name: "NodeJS",
-    //   logo: "",
-    //   level: null,
-    //   isLevelDisplayed: false,
-    // },
+    {
+      category: "other",
+      id: "nodejs",
+      name: "NodeJS",
+      logo: "",
+      level: null,
+      isLevelDisplayed: false,
+    },
     {
       category: "framework",
       id: "react",

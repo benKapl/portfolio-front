@@ -21,20 +21,20 @@ export const Company = ({ id, name, logo, website, description }) => {
                 />)
     })
 
-    const companyContainer = "flex flex-col w-full px-6 py-3 bg-inherit bg-opacity-100";
-    const companyDefContainer = "flex flex-col flex-start ";
+    const container = "flex flex-col w-full px-6 py-3 bg-inherit bg-opacity-100";
+    const descriptionLayout = "flex flex-col flex-start ";
     const titleStyle = "text-slate-300 font-bold"
 
     return (
-        <div className={companyContainer}>
-            <div className={companyDefContainer}>
+        <div className={container}>
+            <div className={descriptionLayout}>
                 <div className="flex flex-start items-center">
                     <Link href={website} passHref target="_blank">
                         <Image src={logo} alt={`Logo ${name}`} width={125} height={20}/>
                     </Link>
                     <h2 className={clsx(titleStyle, "text-2xl ml-8 hidden")}>{name}</h2>
                 </div>
-                <p className="text-slate-300 my-2">{description.FR}</p>
+                <p className="text-slate-300 text- my-2">{description.FR}</p>
             </div>
             {companyJobs}
         </div>

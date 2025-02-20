@@ -2,7 +2,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import moment from "moment";
 import "moment/locale/fr";
-import { Task } from "@/app/components/task";
+import { Bullet } from "@/app/components/bullet";
 import { stacks } from "../data/stacks";
 
 export const Job = ({
@@ -18,10 +18,10 @@ export const Job = ({
     const container = "p-6 rounded-2xl transition-all transform hover:shadow-xl hover:bg-slate-800 hover:bg-opacity-80";
     const titleStyle = "text-slate-300 font-bold";
     const jobTitleContainer = "flex justify-start items-center w-full mb-2";
-    const dateContainer = "flex justify-between items-center w-40";
-    const dateStyle = "text-yellow-400 ";
+    const dateContainer = "flex justify-between items-center w-48";
+    const dateStyle = "text-yellow-400 text-lg";
     const tasksContainer = "flex justify-start items-center gap-2 flex-wrap";
-    const stackContainer = "mt-2 flex justify-start items-center gap-2 flex-wrap";
+    const stackContainer = "mt-2 flex justify-start items-center gap-6 flex-wrap";
     // const toolsContainer = "flex justify-start items-center gap-2 flex-wrap";
 
     const startDate = moment(start).format("MMM YYYY");
@@ -46,12 +46,13 @@ export const Job = ({
             </div>
             <div className={tasksContainer}>
                 {tasks.FR.map((task, index) => (
-                    <Task key={index} name={task} />
+                    <Bullet key={index} name={task} />
                 ))}
             </div>
             {langLogos.length > 0 &&
             <div className={stackContainer}>
-                <p className=" ml-2 text-white">Stack : </p>{langLogos}
+                {/* <p className=" ml-2 text-white">Stack : </p> */}
+                {langLogos}
             </div>}
         </div>
     );

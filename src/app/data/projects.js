@@ -14,11 +14,9 @@ export const projects = [
         image: "demo_pokedex-cli.gif",
         website: "",
         repo: "https://github.com/benKapl/pokedex-cli",
-        stack: {
-            languages: [
-                "go",
-            ],
-        }
+        stack: [
+            "go",
+        ]
     },
     {
         id: "grimoire",
@@ -35,17 +33,16 @@ export const projects = [
         image: "demo_grimoire.gif",
         website: "https://www.mongrimoire.dev/",
         repo: "https://github.com/benKapl/grimoire-frontend",
-        stack: {
-            languages: [
-                "js",
-                "react",
-                "nextjs",
-                "expressjs",
-                "mongodb",
-                "redux",
-                "tailwind",
-            ],
-        }
+        stack: [
+            "js",
+            "nodejs",
+            "react",
+            "nextjs",
+            "expressjs",
+            "mongodb",
+            "redux",
+            "tailwind",
+        ]
     },
     {
         id: "maze-solver",
@@ -62,10 +59,8 @@ export const projects = [
         image: "demo_maze-solver.gif",
         website: "",
         repo: "https://github.com/benKapl/maze-solver",
-        stack: {
-            languages: [
-                "python",
-            ],
-        }
+        stack: [
+            "python",
+        ]
     },
 ]
