@@ -8,8 +8,9 @@ export const Project = ({ name, description, demoUrl, website, repo, stack }) =>
 
     const container = "flex flex-col w-full h-auto px-6 py-3 bg-inherit "
     const titleStyle = "text-slate-300 font-bold"
-    const mainContent = "flex w-full h-auto justify-start items-center"
+    const mainContent = "flex flex-wrap w-full h-auto justify-start items-center gap-4"
     const textContent= "text-white"
+    const linkStyle = "text-blue-500 underline"
     const stacksContainer = ""
     const linksContainer = ""
 
@@ -21,7 +22,7 @@ export const Project = ({ name, description, demoUrl, website, repo, stack }) =>
                 <div className={textContent}>
                     {lines.map((data, i) => {
                         let lastLine = lines[lines.length - 1]
-                        let htmlLine = <p key={i}>{data}</p>
+                        let htmlLine = <p key={i} dangerouslySetInnerHTML={{ __html: data.replace(/<a /g, `<a class="${linkStyle}" target="_blank" `) }}></p>
                         if (data != lastLine) { return <>{htmlLine}<br/></>} // If not lastline, add a return
                         return htmlLine
                      })}

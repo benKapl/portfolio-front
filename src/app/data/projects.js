@@ -54,7 +54,7 @@ export const projects = [
             EN: "",
         },
         description: {
-            FR: "Cette interface graphique génère un labyrinthe aléatoire et le résout automatiquement. Je l'ai développé dans le cadre de mon apprentissage des fondamentaux du développement backend via la plateforme boot.dev.\nCodé en Python avec la librairie native tkinter, le projet utilise le paradigme de la Programmation Orientée Objet et un algorithme récursif (DPS).",
+            FR: "Cette interface graphique génère un labyrinthe aléatoire et le résout automatiquement. Je l'ai développé dans le cadre de mon apprentissage des fondamentaux du développement backend via la plateforme <a href='https://boot.dev'>boot.dev</a>.\nCodé en Python avec la librairie native tkinter, le projet utilise le paradigme de la Programmation Orientée Objet et un algorithme récursif (DPS).",
             EN: "",
         },
         year: "2024",
