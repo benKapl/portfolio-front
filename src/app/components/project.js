@@ -1,6 +1,9 @@
 import clsx from "clsx"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
-// import Link from "next/link";
+import { CustomLink } from "./link";
 import { stacks } from "../data/stacks";
 import { Bullet } from "./bullet";
 
@@ -15,9 +18,11 @@ export const Project = ({ name, description, demoUrl, website, repo, stack }) =>
     const stacksContainer = "flex justify-start items-center gap-4 flex-wrap"
     const mainContent = "flex flex-wrap w-full h-auto justify-start items-center gap-4"
     const imageContainer = "flex-shrink-0 w-400px"
-    const textContent= "text-white flex-1 text-justify min-w-96"
-    const linkStyle = "text-blue-500 underline"
-    const linksContainer = ""
+    const presentation= "text-white flex-1 text-justify min-w-96"
+    const descLinkStyle = "text-blue-500 underline"
+    const linksContainer = "flex flex-start items-center gap-4 mt-6 "
+    const iconHoverStyle = "hover:text-lg transition-transform transform hover:scale-125"
+
 
     return (
         <div className={container}>
@@ -27,16 +32,32 @@ export const Project = ({ name, description, demoUrl, website, repo, stack }) =>
                 <div className={imageContainer}>
                     <Image src={demoUrl} alt={`Demo ${name}`} width={400} height={150}/>
                 </div>
-                <div className={textContent}>
+                <div className={presentation}>
                     {lines.map((data, i) => {
                         let lastLine = lines[lines.length - 1]
-                        let htmlLine = <p key={i} dangerouslySetInnerHTML={{ __html: data.replace(/<a /g, `<a class="${linkStyle}" target="_blank" `) }}></p>
+                        let htmlLine = <p key={i} dangerouslySetInnerHTML={{ __html: data.replace(/<a /g, `<a class="${descLinkStyle}" target="_blank" `) }}></p>
                         if (data != lastLine) { return <>{htmlLine}<br/></>} // If not lastline, add a return
                         return htmlLine
                      })}
+
+                    <div className={linksContainer}>
+                        {website != "" &&   // dispaly website only if exists
+                            <CustomLink 
+                                href={website} 
+                                icon={faArrowUpRightFromSquare} 
+                                color="text-pink-500">
+                                Website
+                            </CustomLink>}
+                        <CustomLink 
+                            href={repo} 
+                            icon={faGithub} 
+                            color="text-cyan-300"> 
+                            Code
+                        </CustomLink>
+
+                    </div>
                 </div>
             </div>
-            <div className={linksContainer}></div>
         </div>
     )
 }

@@ -6,7 +6,7 @@ export const projects = [
             EN: "",
         },
         description: {
-            FR: "Application développée pour mettre Go en pratique, ce Pokedex permet d'explorer le monde des Pokémons et de les collectionner... sans quitter son terminal.\nCe fut un bon exercice de mise en pratique des requêtes HTTP en Go, avec la création d'un client HTTP et la mise en place d'un système de caching.",
+            FR: "Premier développement Go, ce Pokedex permet d'explorer le monde des Pokémons et de les collectionner... sans quitter son terminal.\nCe fut un bon exercice de mise en pratique des requêtes HTTP en Go, avec la création d'un client HTTP et la mise en place d'un système de caching.",
             EN: "",
         },
         year: "2025",
