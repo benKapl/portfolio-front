@@ -1,5 +1,4 @@
 import clsx from "clsx"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
@@ -21,8 +20,6 @@ export const Project = ({ name, description, demoUrl, website, repo, stack }) =>
     const presentation= "text-white flex-1 text-justify min-w-96"
     const descLinkStyle = "text-blue-500 underline"
     const linksContainer = "flex flex-start items-center gap-4 mt-6 "
-    const iconHoverStyle = "hover:text-lg transition-transform transform hover:scale-125"
-
 
     return (
         <div className={container}>

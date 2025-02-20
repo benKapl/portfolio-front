@@ -10,7 +10,7 @@ export const projects = [
             EN: "",
         },
         year: "2025",
-        isFavorite: true,
+        isFavorite: false,
         image: "demo_pokedex-cli.gif",
         website: "",
         repo: "https://github.com/benKapl/pokedex-cli",

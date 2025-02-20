@@ -74,10 +74,10 @@ export const MobileNavigation = () => {
                     Hello
                 </Link>
                 <Link onClick={closeNav} href="/about/bio" className={clsx(tabStyle, pathname.startsWith("/about") && currentTabStyle)}>
-                    About
+                    À propos
                 </Link>
-                <Link onClick={closeNav} href="/projects" className={clsx(tabStyle, pathname === "/projects" && currentTabStyle)}>
-                    Projects
+                <Link onClick={closeNav} href="/projects/pinned" className={clsx(tabStyle, pathname.startsWith("/projects") && currentTabStyle)}>
+                    Projets
                 </Link>
             </nav>)}
             
