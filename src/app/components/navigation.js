@@ -59,7 +59,7 @@ export const MobileNavigation = () => {
 
     const pathname = usePathname();
 
-    const tabStyle = "w-full h-16 text-xl flex justify-center items-center hover:bg-slate-900 hover:text-yellow-500 hover:font-bold"
+    const tabStyle = "w-full h-14 text-xl flex justify-center items-center hover:bg-slate-900 hover:text-yellow-500 hover:font-bold"
     const currentTabStyle = "bg-slate-900 text-yellow-500 font-bold"
 
     return (
