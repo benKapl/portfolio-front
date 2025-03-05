@@ -1,5 +1,6 @@
 "use client";
-// import clsx from "clsx";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { usePathname} from "next/navigation";
 import { useState, useEffect } from "react";
 import { ComputerNavigation, MobileNavigation } from "../components/navigation";
@@ -10,9 +11,9 @@ import { aboutSections, projectsSections } from "../data/tabs";
 export default function ContentLayout({ children }) {
 
   const [isMobile, setIsMobile] = useState(false);
+  const [isMobileSidebarVisible, setIsMobileSidebarVisible]  = useState(false);
 
   useEffect(() => {
-    // const getSocials = fetch()
 
     const handleResize = () => {
       setIsMobile(window.innerWidth < 640); // sm breakpoint
@@ -51,8 +52,24 @@ export default function ContentLayout({ children }) {
       {isMobile ? <MobileNavigation /> : <ComputerNavigation />} {/* HEADER CONTAINING NAV BAR*/}
 
       <div className="bg-slate-900 flex-1 flex overflow-y-hidden">  {/* MIDDLE CONTAINER*/}
+      {pathname !== "/" && // Show Sidebar only if page is not "/"
+        <div className="bg-slate-800 flex justify-center items-center h-full w-6 md:hidden">
+          <FontAwesomeIcon 
+            className='text-xl text-yellow-500 cursor-pointer' 
+            icon={isMobileSidebarVisible ? faChevronLeft: faChevronRight} 
+            onClick={() => setIsMobileSidebarVisible(!isMobileSidebarVisible)}/>
+        </div>}
+
+        {isMobileSidebarVisible && 
+        (<aside className="bg-slate-800 text-white w-48 h-full"> {/* SIDEBAR */}
+          <Sidebar 
+            title={sidebarTitle}
+            sections={sidebarSections}
+            />
+          </aside>)}
+
         {pathname !== "/" && // Show Sidebar only if page is not "/"
-        (<aside className="bg-slate-800 text-white w-48 h-full">
+        (<aside className="bg-slate-800 text-white w-48 h-full hidden md:block"> {/* SIDEBAR */}
           <Sidebar 
             title={sidebarTitle}
             sections={sidebarSections}
