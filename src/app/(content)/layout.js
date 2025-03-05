@@ -50,19 +50,19 @@ export default function ContentLayout({ children }) {
 
       {isMobile ? <MobileNavigation /> : <ComputerNavigation />} {/* HEADER CONTAINING NAV BAR*/}
 
-      <div className="bg-slate-900 flex-1 flex overflow-y-auto">  {/* MIDDLE CONTAINER*/}
+      <div className="bg-slate-900 flex-1 flex overflow-y-hidden">  {/* MIDDLE CONTAINER*/}
         {pathname !== "/" && // Show Sidebar only if page is not "/"
-        (<aside className="bg-slate-800 text-white w-48 h-full fixed">
+        (<aside className="bg-slate-800 text-white w-48 h-full">
           <Sidebar 
             title={sidebarTitle}
             sections={sidebarSections}
             />
           </aside>)}
-        <div className="flex-1 ml-48 bg-slate-900 overflow-x-hidden"> {/* Adjust content to account for sidebar */}
+        <div className="flex-1 bg-slate-900 overflow-x-hidden"> {/* Adjust content to account for sidebar */}
           {children}
         </div>
       </div>  
-      <footer className="h-12 flex justify-end items-center bg-slate-700 z-10">  {/* FOOTER WITH SOCIALS */}
+      <footer className="h-12 flex justify-center md:justify-end items-center bg-slate-700 z-10">  {/* FOOTER WITH SOCIALS */}
         <Socials />
       </footer>
     </div>
