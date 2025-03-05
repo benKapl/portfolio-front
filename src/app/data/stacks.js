@@ -48,6 +48,14 @@ export const stacks = [
     },
     {
       category: "language",
+      id: "ts",
+      name: "TypeScript",
+      logo: "logo_typescript.png",
+      level: 2,
+      isLevelDisplayed: true,
+    },  
+    {
+      category: "language",
       id: "js",
       name: "JavaScript",
       logo: "logo_javascript.png",

@@ -1,12 +1,16 @@
 import clsx from "clsx"
+import { bio } from "@/app/data/bio"
 
 export default function Bio() {
+
+    const bioLines = bio.FR.split("\n")
 
     // Styles
 
     const container = "bg-inherit flex-1 flex-col h-auto w-full justify-start items-start mx-4 w-[90%]"
     const titleStyle = "text-slate-300 font-bold"
-    const content = "text-white m-2 "
+    const content = "text-white m-4 "
+    const descLinkStyle = "text-blue-500 underline"
 
     return (
         <section className={container}>
@@ -14,8 +18,12 @@ export default function Bio() {
                 <h1 className={clsx(titleStyle, "text-3xl h-full")}>Bio</h1>
             </div>
             <div className={content}>
-                <p>Je m&apos;appelle Benjamin et ceci est ma bio</p>
-                <p>Youloulou je cueille des pommes</p>
+                {bioLines.map((data, i) => {
+                        let lastLine = bioLines[bioLines.length - 1]
+                        let htmlLine = <p key={i} dangerouslySetInnerHTML={{ __html: data.replace(/<a /g, `<a class="${descLinkStyle}" target="_blank" `) }}></p>
+                        if (data != lastLine) { return <>{htmlLine}<br/></>} // If not lastline, add a return
+                        return htmlLine
+                     })}
             </div>
         </section>
     )
