@@ -4,7 +4,7 @@ import { socials } from "../data/socials";
 
 export const Socials = () => {
     return (
-        <div className="mr-8 flex gap-12 text-white">
+        <div className="mx-8 flex gap-12 text-white">
             {socials.map((data, index) => (
             <Link key={index} href={data.url} passHref target="_blank">
                 <Image
