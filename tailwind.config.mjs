@@ -50,9 +50,6 @@ export default {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
-		spacing: {
-		'safe-bottom': 'env(safe-area-inset-bottom)',
-		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
