@@ -5,8 +5,8 @@ import { useRouter } from 'next/navigation';
 export default function Home() {
     const router = useRouter();
 
-    const container = "flex flex-1 h-full w-full justify-start items-center"
-    const homeContent = "flex flex-col items-center md:flex-row gap-10 mx-20 md:mx-24 lg:mx-32"
+    const container = "flex flex-1 justify-start items-center"
+    const homeContent = "flex flex-col items-center md:flex-row gap-10 mx-12 md:mx-24 lg:mx-32"
     const titleContainer = "flex-1 flex flex-col justify-center items-center md:items-start text-white"
     return (
         <div className={container}>
