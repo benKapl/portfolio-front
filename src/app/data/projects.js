@@ -10,7 +10,7 @@ export const projects = [
             EN: "",
         },
         year: "2025",
-        isFavorite: false,
+        isFavorite: true,
         image: "demo_pokedex-cli.gif",
         website: "",
         repo: "https://github.com/benKapl/pokedex-cli",
@@ -58,7 +58,7 @@ export const projects = [
         isFavorite: true,
         image: "demo_maze-solver.gif",
         website: "",
-        repo: "https://github.com/benKapl/maze-solver",
+        repo: "https://github.com/benKapl/maze_solver",
         stack: [
             "python",
         ]

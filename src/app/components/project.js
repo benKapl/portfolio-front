@@ -38,7 +38,7 @@ export const Project = ({ name, description, demoUrl, website, repo, stack }) =>
                      })}
 
                     <div className={linksContainer}>
-                        {website != "" &&   // dispaly website only if exists
+                        {website != "" &&   // display website only if exists
                             <CustomLink 
                                 href={website} 
                                 icon={faArrowUpRightFromSquare} 

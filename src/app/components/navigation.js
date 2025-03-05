@@ -13,7 +13,7 @@ export const ComputerNavigation = () => {
     const currentTabStyle = "bg-slate-900 text-yellow-500 font-bold"
 
     return (
-        <header className="bg-slate-700 text-slate-300 h-16 text-center">
+        <header className="bg-slate-700 text-slate-300 h-14 text-center">
             <nav className="flex justify-around items-center h-full">
                 <Link href="/" className={clsx(tabStyle, pathname === "/" && currentTabStyle)} >
                     Hello

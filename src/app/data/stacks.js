@@ -14,19 +14,26 @@ export const stackCategories = [
     },
   },
   {
-    id: "library",
-    name: {
-      FR: "Librairies",
-      EN: "Libraries",
-    },
-  },
-  {
     id: "dbms",
     name: {
       FR: "SGBD",
       EN: "DBMS",
     },
   },
+  // {
+  //   id: "orm",
+  //   name: {
+  //     FR: "ORM",
+  //     EN: "ORM",
+  //   },
+  // },
+  // {
+  //   id: "library",
+  //   name: {
+  //     FR: "Librairies",
+  //     EN: "Libraries",
+  //   },
+  // },
 
 ]
 
@@ -127,6 +134,14 @@ export const stacks = [
       level: 2,
       isLevelDisplayed: true,
     },
+    {
+      category: "framework",
+      id: "tailwind",
+      name: "Tailwind CSS",
+      logo: "logo_tailwind-css.png",
+      level: 3,
+      isLevelDisplayed: true,
+    },
     // {
     //   category: "framework",
     //   id: "expo",
@@ -135,6 +150,14 @@ export const stacks = [
     //   level: null,
     //   isLevelDisplayed: false,
     // },
+    {
+      category: "dbms",
+      id: "postgresql",
+      name: "PostgreSQL",
+      logo: "logo_postgresql.png",
+      level: 3,
+      isLevelDisplayed: false,
+    },
     {
       category: "dbms",
       id: "mongodb",
@@ -152,35 +175,27 @@ export const stacks = [
       isLevelDisplayed: false,
     },
     {
-      category: "dbms",
-      id: "postgresql",
-      name: "PostgreSQL",
-      logo: "logo_postgresql.png",
-      level: 0,
-      isLevelDisplayed: false,
+      category: "orm",
+      id: "prisma",
+      name: "Prisma",
+      logo: "",
+      level: 2,
+      isLevelDisplayed: true,
     },
     {
-      category: "library",
+      category: "orm",
       id: "mongoose",
       name: "Mongoose",
       logo: "",
       level: 3,
       isLevelDisplayed: true,
     },
-    {
-      category: "library",
-      id: "redux",
-      name: "Redux",
-      logo: "",
-      level: 2,
-      isLevelDisplayed: true,
-    },
-    {
-      category: "library",
-      id: "tailwind",
-      name: "Tailwind CSS",
-      logo: "logo_tailwind-css.png",
-      level: 3,
-      isLevelDisplayed: true,
-    },
+    // {
+    //   category: "library",
+    //   id: "redux",
+    //   name: "Redux",
+    //   logo: "",
+    //   level: 2,
+    //   isLevelDisplayed: true,
+    // },
   ]

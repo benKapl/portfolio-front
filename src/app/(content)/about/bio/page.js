@@ -4,14 +4,15 @@ export default function Bio() {
 
     // Styles
 
-    // const testStyle = "border border-solid border-red-200"
-    const container = "flex-1 flex-col h-auto w-full justify-start items-start mx-4 mt-8 w-[90%]"
+    const container = "bg-inherit flex-1 flex-col h-auto w-full justify-start items-start mx-4 w-[90%]"
     const titleStyle = "text-slate-300 font-bold"
     const content = "text-white m-2 "
 
     return (
         <section className={container}>
-            <h1 className={clsx(titleStyle, "sticky top-0 text-3xl ml-2 mt-2")}>Bio</h1>
+            <div className="sticky top-0 pt-6 pb-4 pl-6 bg-inherit h-18 w-full z-30"> {/*Fixes the title at the top*/}
+                <h1 className={clsx(titleStyle, "text-3xl h-full")}>Bio</h1>
+            </div>
             <div className={content}>
                 <p>Je m&apos;appelle Benjamin et ceci est ma bio</p>
                 <p>Youloulou je cueille des pommes</p>

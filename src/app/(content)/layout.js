@@ -62,7 +62,7 @@ export default function ContentLayout({ children }) {
           {children}
         </div>
       </div>  
-      <footer className="h-14 bg-slate-700 z-10">  {/* FOOTER WITH SOCIALS */}
+      <footer className="h-12 flex justify-end items-center bg-slate-700 z-10">  {/* FOOTER WITH SOCIALS */}
         <Socials />
       </footer>
     </div>
