@@ -63,7 +63,7 @@ export const MobileNavigation = () => {
     const currentTabStyle = "bg-slate-900 text-yellow-500 font-bold"
 
     return (
-        <header className="relative flex justify-center items-center bg-slate-700 text-slate-300 h-16 text-center">
+        <header className="relative flex justify-center items-center bg-slate-700 text-slate-300 h-16 text-center z-40">
             <FontAwesomeIcon 
                 className='w-10 hover: cursor-pointer' 
                 icon={faBars} 

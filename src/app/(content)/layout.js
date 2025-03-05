@@ -53,28 +53,24 @@ export default function ContentLayout({ children }) {
 
       <div className="bg-slate-900 flex-1 flex overflow-y-hidden">  {/* MIDDLE CONTAINER*/}
       {pathname !== "/" && // Show Sidebar only if page is not "/"
-        <div className="bg-slate-800 flex justify-center items-center h-full w-6 md:hidden">
+        <>
+        {isMobile && 
+        <div className="bg-slate-800 flex justify-center items-center h-full w-6 ">
           <FontAwesomeIcon 
             className='text-xl text-yellow-500 cursor-pointer' 
             icon={isMobileSidebarVisible ? faChevronLeft: faChevronRight} 
             onClick={() => setIsMobileSidebarVisible(!isMobileSidebarVisible)}/>
         </div>}
-
-        {isMobileSidebarVisible && 
-        (<aside className="bg-slate-800 text-white w-48 h-full"> {/* SIDEBAR */}
+        {(!isMobile || isMobileSidebarVisible) &&  
+        <aside className="bg-slate-800 text-white w-48 h-full"> {/* SIDEBAR */}
           <Sidebar 
             title={sidebarTitle}
             sections={sidebarSections}
-            />
-          </aside>)}
+          />
+        </aside>}
+        </>}
 
-        {pathname !== "/" && // Show Sidebar only if page is not "/"
-        (<aside className="bg-slate-800 text-white w-48 h-full hidden md:block"> {/* SIDEBAR */}
-          <Sidebar 
-            title={sidebarTitle}
-            sections={sidebarSections}
-            />
-          </aside>)}
+        
         <div className="flex-1 bg-slate-900 overflow-x-hidden"> {/* Adjust content to account for sidebar */}
           {children}
         </div>
