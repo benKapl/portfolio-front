@@ -11,7 +11,7 @@ import { aboutSections, projectsSections } from "../data/tabs";
 export default function ContentLayout({ children }) {
 
   const [isMobile, setIsMobile] = useState(false);
-  const [isMobileSidebarVisible, setIsMobileSidebarVisible]  = useState(false);
+  const [isSidebarVisible, setIsSidebarVisible]  = useState(false);
 
   useEffect(() => {
 
@@ -46,6 +46,10 @@ export default function ContentLayout({ children }) {
       sidebarSections = projectsSections
   } 
 
+  const closeSidebar = () => {
+    setIsSidebarVisible(false)
+  } 
+
   return (
     <div className="flex flex-col h-screen w-screen"> {/* APP CONTAINER*/}
 
@@ -58,14 +62,15 @@ export default function ContentLayout({ children }) {
         <div className="bg-slate-800 flex justify-center items-center h-full w-6 ">
           <FontAwesomeIcon 
             className='text-xl text-yellow-500 cursor-pointer' 
-            icon={isMobileSidebarVisible ? faChevronLeft: faChevronRight} 
-            onClick={() => setIsMobileSidebarVisible(!isMobileSidebarVisible)}/>
+            icon={isSidebarVisible ? faChevronLeft: faChevronRight} 
+            onClick={() => setIsSidebarVisible(!isSidebarVisible)}/>
         </div>}
-        {(!isMobile || isMobileSidebarVisible) &&  
+        {(!isMobile || isSidebarVisible) &&  
         <aside className="bg-slate-800 text-white w-48 h-full"> {/* SIDEBAR */}
           <Sidebar 
             title={sidebarTitle}
             sections={sidebarSections}
+            closeSidebar={closeSidebar}
           />
         </aside>}
         </>}
