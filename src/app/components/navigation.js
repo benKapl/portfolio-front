@@ -69,7 +69,7 @@ export const MobileNavigation = () => {
                 icon={faBars} 
                 onClick={() => setIsNavVisible(!isNavVisible)}/>
             {isNavVisible && (
-            <nav ref={navRef} className="absolute top-10 flex flex-col justify-start items-center w-4/5 bg-slate-800">
+            <nav ref={navRef} className="absolute top-10 flex flex-col justify-start items-center w-4/5 bg-slate-800 border border-slate-700">
                 <Link onClick={closeNav} href="/" className={clsx(tabStyle, pathname === "/" && currentTabStyle)} >
                     Hello
                 </Link>
