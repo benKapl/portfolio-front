@@ -15,11 +15,13 @@ export const Project = ({ name, description, demoUrl, website, repo, stack }) =>
     const container = "flex flex-col w-full h-auto px-6 py-3 bg-inherit gap-4"
     const titleStyle = "text-2xl text-yellow-500 font-bold"
     const stacksContainer = "flex justify-start items-center gap-4 flex-wrap"
-    const mainContent = "flex flex-wrap w-full h-auto justify-start items-center gap-4 mr-4"
-    const imageContainer = "flex-shrink-0 w-[200px] md:w-[300px] lg:w-[400px]"
-    const presentation= "flex flex-1 flex-col text-white text-justify min-w-96"
+    const mainContent = "flex flex-col md:flex-row justify-start flex-start md:items-center w-full h-auto gap-4 mr-4"
+    const imageContainer = "flex-shrink-0 w-[240px] md:w-[300px] lg:w-[400px]"
+    const presentation= "flex flex-1 flex-col text-white text-justify"
     const descLinkStyle = "text-blue-500 underline"
     const linksContainer = "flex flex-start items-center gap-4 mt-6 "
+    const separator = "w-full h-1 mt-4 bg-slate-800";
+
 
     return (
         <div className={container}>
@@ -55,6 +57,7 @@ export const Project = ({ name, description, demoUrl, website, repo, stack }) =>
                     </div>
                 </div>
             </div>
+            <div className={separator}></div>
         </div>
     )
 }

@@ -17,7 +17,7 @@ export default async function ProjectPage({params}) {
   // Styles
   const container = "bg-inherit flex-1 flex-col h-auto w-full justify-start items-start mx-4 w-[90%]"
   const titleStyle = "text-slate-300 font-bold"
-  const projectsContainer = "flex bg-inherit flex-col h-auto w-auto mx-4 gap-2"
+  const projectsContainer = "flex bg-inherit flex-col h-auto w-auto mr-4 gap-2"
 
   return (
       <section className={container}>
