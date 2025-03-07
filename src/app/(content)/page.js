@@ -16,7 +16,7 @@ export default function Home() {
                     alt="Developper drawing" 
                     width={400} 
                     height={400} 
-                    className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]" 
+                    className="cursor-pointer w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]" 
                     onClick={() => router.push("/about/bio")}/>
                 <div className={titleContainer}>
                     <h1 className="text-7xl text-yellow-500 font-bold">Hello !</h1>
