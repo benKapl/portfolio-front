@@ -8,35 +8,40 @@ import { jobs } from "../data/experiences";
 
 export const Company = ({ id, name, logo, website, description }) => {
 
-    const companyJobs = jobs.filter(data => (data.companyId == id)).map((data, index) => {
-       return (<Job 
-                key={index}
-                category={data.category}
-                title={data.title}
-                start={data.startDate}
-                end={data.endDate}
-                tasks={data.tasks}
-                languages={data.stack.languages}
-                // tools={data.stack.tools}
-                />)
-    })
-
-    const container = "flex flex-col w-full px-6 py-3 bg-inherit bg-opacity-100";
-    const descriptionLayout = "flex flex-col flex-start ";
-    const titleStyle = "text-slate-300 font-bold"
+    const container = "flex flex-col w-full bg-inherit bg-opacity-100 mt-6";
+    const companyContent = "flex flex-start items-center mx-10 mb-3";
+    const logoContainer = "flex flex-start w-[200px] items-center"
+    const companyDescription = "flex flex-1 text-slate-300 text-lg italic"
+    const separator = "w-full h-1 mt-4 bg-slate-800";
+    const zoomEffect="transform transition-transform duration-200 hover:scale-110"
 
     return (
         <div className={container}>
-            <div className={descriptionLayout}>
-                <div className="flex flex-start items-center">
+            <div className={companyContent}>
+                <div className={logoContainer}>
                     <Link href={website} passHref target="_blank">
-                        <Image src={logo} alt={`Logo ${name}`} width={125} height={20}/>
+                        <Image className={zoomEffect} src={logo} alt={`Logo ${name}`} width={125} height={20}/>
                     </Link>
-                    <h2 className={clsx(titleStyle, "text-2xl ml-8 hidden")}>{name}</h2>
+                    {/* <h2 className={clsx(titleStyle, "text-2xl ml-8 hidden")}>{name}</h2> */}
                 </div>
-                <p className="text-slate-300 text- my-2">{description.FR}</p>
+                <div className={companyDescription}>
+                    <p>{description.FR}</p>
+                </div>
             </div>
-            {companyJobs}
+            <div className="flex flex-col gap-2">
+                {jobs.filter(data => (data.companyId == id)).map((data, index) => {
+                    return (<Job 
+                        key={index}
+                        category={data.category}
+                        title={data.title}
+                        start={data.startDate}
+                        end={data.endDate}
+                        tasks={data.tasks}
+                        languages={data.stack.languages}
+                        // tools={data.stack.tools}
+                     />)})}
+            </div>
+            <div className={separator}></div>
         </div>
     )
 }

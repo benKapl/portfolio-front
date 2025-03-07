@@ -5,7 +5,7 @@ export const companies = [
     logo: "logo_capsule.png",
     website: "https://www.lacapsule.academy/",
     description: {
-      FR: "La Capsule est un Coding Bootcamp qui propose des formations de haut niveau pour apprendre à coder en web et mobile sur des formations intensives de 10 semaines.",
+      FR: "Coding Bootcamp proposant des formations de haut niveau pour apprendre à coder en web et mobile sur des formations intensives de 10 semaines.",
       EN: ""
     },
   },
@@ -15,7 +15,7 @@ export const companies = [
     logo: "logo_energisme.png",
     website: "https://energisme.com/",
     description: {
-      FR: "Solutions de suivi et d'optimisations énergétique de parcs immobilier et industriels.",
+      FR: "Solutions de suivi et d'optimisations énergétique de parcs immobilier et industriels. ",
       EN: ""
     },
   },

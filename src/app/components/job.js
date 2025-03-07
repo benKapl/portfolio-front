@@ -17,7 +17,7 @@ export const Job = ({
     moment.locale("fr");
 
     const container = "p-6 rounded-2xl transition-all transform hover:shadow-xl hover:bg-slate-800 hover:bg-opacity-80";
-    const titleStyle = "text-slate-300 font-bold";
+    const titleStyle = "text-slate-300 text-2xl font-bold";
     const jobTitleContainer = "flex justify-start items-center w-full mb-2";
     const dateContainer = "flex justify-between items-center w-48";
     const dateStyle = "text-yellow-400 text-lg";
@@ -40,10 +40,10 @@ export const Job = ({
             <div className={jobTitleContainer}>
                 <div className={dateContainer}>
                     <p className={dateStyle}>{fStartDate}</p>
-                    <p className={titleStyle}> - </p>
+                    <p className="text-slate-300 font-bold"> - </p>
                     <p className={dateStyle}>{fEndDate}</p>
                 </div>
-                <h3 className={clsx("text-slate-300 text-2xl italic ml-8")}>{title.FR}</h3>
+                <h3 className={clsx(titleStyle, "italic ml-8")}>{title.FR}</h3>
             </div>
             <div className={tasksContainer}>
                 {tasks.FR.map((task, index) => (

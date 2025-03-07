@@ -7,7 +7,7 @@ export const StackCategory = ({ id, name }) => {
     const filteredStacks = stacks.filter(data => data.category === id)
 
     const container = "bg-inherit flex flex-col h-full w-60 justify-start items-start mx-3 mb-6"
-    const titleStyle = "text-yellow-300 font-bold";
+    const titleStyle = "text-yellow-500 font-bold";
     const stacksContainer ="flex flex-col justify-start items-start h-auto w-full gap-6" 
 
     return (
