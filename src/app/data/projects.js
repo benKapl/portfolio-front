@@ -2,7 +2,7 @@ export const projects = [
     {
         id: "pokedex-cli",
         name: {
-            FR: "Pokedex (CLI)",
+            FR: "Pokedex (REPL)",
             EN: "",
         },
         description: {

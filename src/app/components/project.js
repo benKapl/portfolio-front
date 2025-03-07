@@ -15,9 +15,9 @@ export const Project = ({ name, description, demoUrl, website, repo, stack }) =>
     const container = "flex flex-col w-full h-auto px-6 py-3 bg-inherit gap-4"
     const titleStyle = "text-2xl text-yellow-500 font-bold"
     const stacksContainer = "flex justify-start items-center gap-4 flex-wrap"
-    const mainContent = "flex flex-wrap w-full h-auto justify-start items-center gap-4"
-    const imageContainer = "flex-shrink-0 w-400px"
-    const presentation= "text-white flex-1 text-justify min-w-96"
+    const mainContent = "flex flex-wrap w-full h-auto justify-start items-center gap-4 mr-4"
+    const imageContainer = "flex-shrink-0 w-[200px] md:w-[300px] lg:w-[400px]"
+    const presentation= "flex flex-1 flex-col text-white text-justify min-w-96"
     const descLinkStyle = "text-blue-500 underline"
     const linksContainer = "flex flex-start items-center gap-4 mt-6 "
 
@@ -27,7 +27,7 @@ export const Project = ({ name, description, demoUrl, website, repo, stack }) =>
             <div className={stacksContainer}>{stackNames}</div>
             <div className={mainContent}>
                 <div className={imageContainer}>
-                    <Image src={demoUrl} alt={`Demo ${name}`} width={400} height={150}/>
+                    <Image src={demoUrl} alt={`Demo ${name}`} width={400} height={400}/>
                 </div>
                 <div className={presentation}>
                     {lines.map((data, i) => {
