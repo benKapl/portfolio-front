@@ -9,11 +9,11 @@ import { useState, useEffect, useRef } from "react";
 export const ComputerNavigation = () => {
     const pathname = usePathname();
 
-    const tabStyle = "w-1/3 h-full flex justify-center items-center text-xl hover:bg-slate-900 hover:text-yellow-500 hover:font-bold"
+    const tabStyle = "w-1/3 h-full flex justify-center items-center text-xl hover:bg-slate-900 hover:text-yellow-500 text-white"
     const currentTabStyle = "bg-slate-900 text-yellow-500 font-bold"
 
     return (
-        <header className="bg-slate-700 text-slate-300 h-14 text-center">
+        <header className="bg-slate-700 h-14 text-center">
             <nav className="flex justify-around items-center h-full">
                 <Link href="/" className={clsx(tabStyle, pathname === "/" && currentTabStyle)} >
                     Hello
@@ -59,7 +59,7 @@ export const MobileNavigation = () => {
 
     const pathname = usePathname();
 
-    const tabStyle = "w-full h-14 text-xl flex justify-center items-center hover:bg-slate-900 hover:text-yellow-500 hover:font-bold"
+    const tabStyle = "w-full h-14 text-xl flex justify-center items-center hover:bg-slate-900 hover:text-yellow-500"
     const currentTabStyle = "bg-slate-900 text-yellow-500 font-bold"
 
     return (

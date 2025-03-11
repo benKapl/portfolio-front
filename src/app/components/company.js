@@ -11,7 +11,7 @@ export const Company = ({ id, name, logo, website, description }) => {
     const container = "flex flex-col w-full bg-inherit bg-opacity-100 mt-6";
     const companyContent = "flex flex-col md:flex-row flex-start items-start md:items-center gap-6 mx-4 md:mx-10 mb-3";
     const logoContainer = "flex flex-start md:w-[200px] items-center"
-    const companyDescription = "flex flex-1 text-slate-300 text-lg italic"
+    const companyDescription = "flex flex-1 text-slate-300 text-lg italic text-justify"
     const separator = "w-full h-1 mt-4 bg-slate-800";
     const zoomEffect="transform transition-transform duration-200 hover:scale-110"
 
