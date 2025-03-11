@@ -18,11 +18,11 @@ export const Job = ({
 
     const container = "p-6 rounded-2xl transition-all transform hover:shadow-xl hover:bg-slate-800 hover:bg-opacity-80";
     const titleStyle = "text-slate-300 text-2xl font-bold";
-    const jobTitleContainer = "flex flex-col md:flex-row justify-start items-start md:items-center w-full gap-2 mb-4 md:mb-2";
+    const jobTitleContainer = "flex flex-col md:flex-row justify-start items-start md:items-center w-full gap-2 mb-4";
     const dateContainer = "flex justify-between items-center w-48";
     const dateStyle = "text-yellow-400 text-lg";
     const tasksContainer = "flex justify-start items-center gap-2 flex-wrap";
-    const stackContainer = "mt-2 flex justify-start items-center gap-6 flex-wrap";
+    const stackContainer = "mt-4 mx-1 flex justify-start items-center gap-8 flex-wrap";
     // const toolsContainer = "flex justify-start items-center gap-2 flex-wrap";
 
     const startDate = moment(start).format("MMM YYYY");
