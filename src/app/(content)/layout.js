@@ -76,7 +76,7 @@ export default function ContentLayout({ children }) {
         </>}
 
         
-        <div className="flex-1 bg-slate-900 overflow-x-hidden scrollbar"> {/* Adjust content to account for sidebar */}
+        <div className="flex-1 bg-slate-900 overflow-x-hidden scrollbar "> {/* Adjust content to account for sidebar */}
           {children}
         </div>
       </div>  

@@ -7,7 +7,7 @@ export default function ExperiencePage() {
     // Styles
 
     // const testStyle = "border border-solid border-red-200"
-    const container = "bg-inherit flex-1 flex-col h-auto w-full justify-start items-start mx-4 mb-16"
+    const container = "bg-inherit flex-1 flex-col h-auto w-full justify-start items-start mx-4 mb-16 max-w-5xl"
     const titleStyle = "text-slate-300 font-bold"
     const allExpContainer = "flex bg-inherit flex-col h-auto w-auto ml-4 mr-12 gap-2"
 

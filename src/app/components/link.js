@@ -13,8 +13,7 @@ export const CustomLink = ({ href, icon, color, children }) => {
 
     return (
         <Link 
-            // className={clsx(linkStyle, isHovered ? `text-${color}-700` : `text-${color}-500`)} 
-            className={clsx(linkStyle, color, isHovered && "opacity-75")} 
+            className={clsx(linkStyle, color)} 
             href={href} passHref target="_blank"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}>

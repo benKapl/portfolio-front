@@ -7,9 +7,9 @@ export default function Bio() {
 
     // Styles
 
-    const container = "bg-inherit text-slate-300 flex-1 flex-col h-auto w-full justify-start items-start mx-4 mb-16"
+    const container = "bg-inherit text-slate-300 text-justify flex-1 flex-col h-auto w-full justify-start items-start max-w-3xl mx-4 mb-16"
     const titleStyle = "font-bold"
-    const content = " m-4 space-y-4 leading-relaxed mx-8"
+    const content = "m-4 space-y-4 text-lg"
     const descLinkStyle = "text-yellow-500 underline"
 
     return (
@@ -43,16 +43,18 @@ export default function Bio() {
             Le second est la formation de Développeur Fullstack Web et Mobile de l&apos;école <a href="https://lacapsule.academy" className={`${descLinkStyle}`}>La Capsule</a>. Celle-ci m&apos;a non seulement permis d&apos;obtenir un diplôme d&apos;équivalence bac+4, mais aussi et surtout d&apos;élargir mes connaissances et ma compréhension des pratiques du développement web modernes, par l&apos;apprentissage :
             </p>
             <ul className="list-disc list-inside space-y-2">
-            <li>
-                des langages fondamentaux du front (HTML, CSS, JavaScript)
-            </li>
-            <li>
-                des frameworks, librairies, SGBD et outils modernes utilisés par les développeurs fullstack (React, Tailwind, NextJs, ExpressJs, React Native, MongoDB, Vercel)
-            </li>
-            <li>
-                du travail collaboratif avec des développeurs, ayant mené à l&apos;aboutissement de <a href="https://github.com/benKapl/grimoire-frontend" className={`${descLinkStyle}`}>Grimoire</a>, un journal pour développeurs permettant d&apos;exécuter du code.
-            </li>
+                <li>
+                    des langages fondamentaux du front (HTML, CSS, JavaScript)
+                </li>
+                <li>
+                    des frameworks, librairies, SGBD et outils modernes utilisés par les développeurs fullstack (React, Tailwind, NextJs, ExpressJs, React Native, MongoDB, Vercel)
+                </li>
+                <li>
+                    du travail collaboratif avec des développeurs, ayant mené à l&apos;aboutissement de <a href="https://github.com/benKapl/grimoire-frontend" className={`${descLinkStyle}`}>Grimoire</a>, un journal pour développeurs permettant d&apos;exécuter du code.
+                </li>
             </ul>
+            <br/>
+            <p>Aujourd’hui, je partage mon temps entre projets personnels et recherche d’emploi. J’ai hâte d’évoluer dans un environnement professionnel aux côtés de développeuses et développeurs expérimentés qui pourront me mentorer et me transmettre leur savoir. </p>
         </div>
         </section>
 

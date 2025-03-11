@@ -137,5 +137,6 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: #CAD5E2 #0F172B;
-  /* scrollbar-display: none; */
 }
+
+@plugin "@tailwindcss/typography";

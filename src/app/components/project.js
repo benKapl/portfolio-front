@@ -44,7 +44,7 @@ export const Project = ({ name, description, demoUrl, website, repo, stack }) =>
                             <CustomLink 
                                 href={website} 
                                 icon={faArrowUpRightFromSquare} 
-                                color="text-pink-500">
+                                color="text-pink-400">
                                 Website
                             </CustomLink>}
                         <CustomLink 
