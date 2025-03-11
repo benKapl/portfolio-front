@@ -1,5 +1,26 @@
 export const projects = [
     {
+        id: "gator",
+        name: {
+            FR: "Gator (CLI)",
+            EN: "",
+        },
+        description: {
+            FR: "Second projet en Go, Gator est un agré-'gator' de flux RSS en CLI qui permet à différents utilisateurs de s'abonner à des flux et de sauvegarder à intervalles régulier les nouveaux articles dans une base de données Postgres hébergée localement.\nGator utilise les librairies Goose pour les migrations et SQLC pour la génération de code typé sécurisé à partir de requêtes SQL.",
+            EN: "",
+        },
+        year: "2025",
+        isFavorite: true,
+        image: "../images/gator_brand.png",
+        website: "",
+        repo: "https://github.com/benKapl/gator",
+        stack: [
+            "go",
+            "sql",
+            "postgresql",  
+        ]
+    },
+    {
         id: "pokedex-cli",
         name: {
             FR: "Pokedex (REPL)",
