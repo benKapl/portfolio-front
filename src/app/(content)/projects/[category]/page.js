@@ -30,7 +30,7 @@ export default async function ProjectPage({params}) {
                   key={data.id}
                   name={data.name}
                   description={data.description}
-                  demoUrl={`/gifs/${data.image}`}
+                  demoUrl={data.image}
                   website={data.website}
                   repo={data.repo}
                   stack={data.stack}

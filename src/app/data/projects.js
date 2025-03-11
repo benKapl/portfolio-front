@@ -11,7 +11,7 @@ export const projects = [
         },
         year: "2025",
         isFavorite: true,
-        image: "../images/gator_brand.png",
+        image: "/images/gator_brand.png",
         website: "",
         repo: "https://github.com/benKapl/gator",
         stack: [
@@ -32,7 +32,7 @@ export const projects = [
         },
         year: "2025",
         isFavorite: true,
-        image: "demo_pokedex-cli.gif",
+        image: "/gifs/demo_pokedex-cli.gif",
         website: "",
         repo: "https://github.com/benKapl/pokedex-cli",
         stack: [
@@ -51,7 +51,7 @@ export const projects = [
         },
         year: "2024",
         isFavorite: true,
-        image: "demo_grimoire.gif",
+        image: "/gifs/demo_grimoire.gif",
         website: "https://www.mongrimoire.dev/",
         repo: "https://github.com/benKapl/grimoire-frontend",
         stack: [
@@ -77,7 +77,7 @@ export const projects = [
         },
         year: "2024",
         isFavorite: true,
-        image: "demo_maze-solver.gif",
+        image: "/gifs/demo_maze-solver.gif",
         website: "",
         repo: "https://github.com/benKapl/maze_solver",
         stack: [
