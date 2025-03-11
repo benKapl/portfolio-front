@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Benjamin Kaplan",
   description: "Discover Benjamin Kaplan's developer portfolio",
+  icon: [
+    { url: '/favicon.ico' },
+  ]
 };
 
 export default function RootLayout({ children }) {
