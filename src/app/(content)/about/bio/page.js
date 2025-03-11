@@ -7,9 +7,9 @@ export default function Bio() {
 
     // Styles
 
-    const container = "bg-inherit text-slate-300 text-justify flex-1 flex-col h-auto w-full justify-start items-start max-w-3xl mx-4 mb-16"
+    const container = "bg-inherit text-slate-300 text-justify flex-1 flex-col h-auto w-full justify-start items-start md:max-w-3xl md:ml-4 mb-16"
     const titleStyle = "font-bold"
-    const content = "m-4 space-y-4 text-lg"
+    const content = "m-4 mx-6 space-y-4 text-lg"
     const descLinkStyle = "text-yellow-500 underline"
 
     return (
