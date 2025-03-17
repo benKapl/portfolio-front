@@ -54,7 +54,7 @@ export default function Bio() {
                 </li>
             </ul>
             <br/>
-            <p>Aujourd’hui, je partage mon temps entre projets personnels et recherche d’emploi. J’ai hâte d’évoluer dans un environnement professionnel aux côtés de développeuses et développeurs expérimentés qui pourront me mentorer et me transmettre leur savoir. </p>
+            {/* <p>Aujourd’hui, je partage mon temps entre projets personnels et recherche d’emploi. J’ai hâte d’évoluer dans un environnement professionnel aux côtés de développeuses et développeurs expérimentés qui pourront me mentorer et me transmettre leur savoir. </p> */}
         </div>
         </section>
 
